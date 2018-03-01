@@ -1,0 +1,200 @@
+:root{
+  --primary-color:#af00e0;
+  --secondary-color:#30003e;
+  --accent-color:#c11367;
+  --bg-color:#af00e0;
+  --shadow-color:#30003e;
+  font-family: helvetica;
+  box-sizing: border-box;
+}
+
+/*select your own color scheme from coolors.com*/
+body{
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  margin: 0;
+  background: var(--primary-color);
+  color: var(--accent-color);
+  width: 100%;
+  position: fixed;
+  display: flex;
+}
+
+nav a:first-child{
+  margin-left: 10%;
+}
+
+nav a {
+  padding: 1em;
+  text-decoration: none;
+  color:inherit;
+}
+
+nav a:hover{
+  background: var(--accent-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* header css*/
+header{
+  background: #ff22ff url("../images/blueb_background.jpg");
+  background-size: cover;
+  display: flex;
+  height:100vh;
+  color: #000;
+  text-decoration-color: #000;
+
+}
+
+header img{
+  width: 100%;
+  }
+
+header div.headerfigure{
+  margin: auto;
+  width: 400px;
+  background:  rgba(255, 255, 255,0.4);
+  border-radius: 10px;
+}
+
+header div.headerfigure h2,
+header div.headerfigure{
+
+  text-align: center;
+}
+
+h1{
+  text-decoration-color:#fff;
+}
+
+
+/*header css*/
+/* image styles*/
+/*quote blockcss*/
+
+blockquote:first-child{
+  margin: 3em auto;
+  text-align: center;
+  color:var(--primary-color);
+  font-size: 1.5em;
+  width: 100%;
+  background:#fff;
+}
+
+blockquote p:first-child::before{
+  content:'"';
+}
+
+blockquote#saidby{
+  text-align: right;
+  font-size: 0.8em;
+}
+
+blockquote#saidby::before{
+  content: "-";
+}
+
+main{
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-gap:1em;
+  justify-content: center;
+  background: #fff;
+}
+
+main figure{
+  margin: 0;
+}
+
+main figure:hover{
+  box-shadow: 5px 5px 5px var(--primary-color);
+}
+
+main figure img{
+  width:100%;
+}
+
+main figure figcaption h2,
+main figure figcaption p{
+  color:var(--primary-color);
+  text-align: center;
+  padding: 0 1em;
+  margin: 0.5em 0 0 0;
+  margin-top: 0.5em;
+  background: #ff22ff url("../images/blueb_background.jpg");
+}
+
+main a{
+  text-decoration: none;
+}
+
+#contact{
+  margin: 3em auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 3em;
+  background: #fff;
+}
+
+/*button*/
+input[type=text], select, textarea{
+  margin: 5px 0;
+  width: 100%;
+  padding:1em;
+  border: 0 solid white;
+  background: var(--bg-color);
+  border-left: 5px solid var(--primary-color);
+  border-radius: 0;
+  resize: vertical;
+}
+
+input[type=submit]{
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  padding: 12px 20px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  float: right;
+  width: 100%;
+}
+
+input[type=submit]:hover{
+  margin-top: 5px;
+  background-color: var(--secondary-color);
+}
+
+#contact iframe{
+  width:100%;
+  height:100%;
+  min-width: 200px;
+  min-height: 280px;
+  background: #fff;
+  background: #ff22ff url("../images/blueb_background.jpg");
+}
+
+
+footer{
+  background: var(--bg-color);
+  color: #fff;
+  text-align: center;
+  padding: 3em 0;
+  text-decoration-color: #fff;
+}
+
+/*footer*/
+footer ul {
+  list-style-type: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
